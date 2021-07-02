@@ -1,0 +1,436 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body{
+  background: $cblue;
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, p{
+  margin: 0;
+}
+
+h4{
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+h6{
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 3rem 0 0 1rem;
+}
+
+ul, li{
+  padding: 0;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  background: #ff7176;
+  z-index: 3;
+
+  .nav_btn{
+    position: fixed;
+    top: 1rem;
+    right: 0;
+    z-index: 4;
+
+    #menuToggle{
+      display: none;
+    }
+  }
+}
+
+
+.all_container{
+  position: relative;
+  color: $cBlack;
+}
+
+
+.mv{
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vw;
+  top: 6rem;
+
+  .kaisai{
+    padding-top: 8rem;
+
+    h3{
+      position: absolute;
+      background-image: url(../img/imouto.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: -1rem;
+      height: calc(150 / 375 * 100vw);
+      width: calc(320 / 375 * 100vw);
+      text-indent: -9999%;
+    }
+  }
+
+  .logo{
+    position: absolute;
+    width: calc(250 / 375 * 100vw);
+    margin: auto;
+    top: calc(120 / 375 * 100vw);
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  h1::after{
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../img/otouto.png);
+    background-size: 100%;
+    width: calc(120 / 375 * 100vw);
+    height: calc(120 / 375 * 100vw);
+    left: calc(160 / 375 * 100vw);
+    bottom: calc(-100 / 375 * 100vw);
+  }
+
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+
+.content{
+  position: relative;
+  width: 88%;
+  background: rgba(255, 255, 255, 0.6);
+  margin: auto;
+  padding-bottom: 4rem;
+  top: 8rem;
+
+  p{
+    font-size: 1.3rem;
+    line-height: 2;
+    margin: 0 1rem 2rem 1rem;
+  }
+
+  dl{
+    display: flex;
+    flex-wrap: wrap;
+    font-size:1.5rem;
+    line-height: 2.5;
+    margin: 2rem;
+  }
+
+  dt{
+    width: 16%;
+  }
+
+  dd{
+    width: 71%;
+    padding-bottom: 2rem;
+    margin-inline-start: 30px;
+  }
+
+  @mixin title{
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: calc(10 / 375 * 100vw);
+    padding-top: calc(40 / 375 * 100vw);
+    text-indent: -9999%;
+  }
+
+  @mixin absolute{
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  #about{
+    h3{
+      background-image: url(../img/test_tit.png);
+      background-size: calc(220 / 375 * 100vw);
+      @include title;
+    }
+  }
+
+  #aplly_01{
+    h3{
+      position: relative;
+      background-image: url(../img/ap01_tit.png);
+      background-size: calc(95 / 375 * 100vw);
+      margin-top: calc(60 / 375 * 100vw);
+      @include title;
+    }
+
+    h3::before{
+      bottom: calc(40 / 375 * 100vw);
+      left: calc(50 / 375 * 100vw);
+      width: calc(70 / 375 * 100vw);
+      height: calc(40 / 375 * 100vw);
+      background: url(../img/yazirusi.png);
+      @include absolute;
+    }
+
+    h3::after{
+      bottom: calc(-80 / 375 * 100vw);
+      left: calc(260 / 375 * 100vw);
+      width: calc(80 / 375 * 100vw);
+      height: calc(180 / 375 * 100vw);
+      background: url(../img/neesan.png);
+      @include absolute;
+    }
+  }
+
+  #aplly_02{
+    h3{
+      position: relative;
+      background-image: url(../img/ap02_tit.png);
+      background-size: calc(95 / 375 * 100vw);
+      margin-top: calc(60 / 375 * 100vw);
+      @include title;
+    }
+
+    p{
+      position: relative;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    p::after{
+      bottom: calc(-20 / 375 * 100vw);
+      left: calc(-10 / 375 * 100vw);
+      width: calc(300 / 375 * 100vw);
+      height: calc(70 / 375 * 100vw);
+      background: url(../img/pencil.png);
+      @include absolute;
+    }
+
+    .submit{
+      margin: auto;
+      width: 80%;
+
+      img{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  #judge{
+    h5{
+      font-size:2rem;
+      text-align: center;
+    }
+
+    h6{
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .img_shin{
+      width: 55%;
+      margin: 2rem auto;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    h3{
+      position: relative;
+      background-image: url(../img/judge_tit.png);
+      background-size: calc(75 / 375 * 100vw);
+      margin-top: calc(0 / 375 * 100vw);
+      @include title;
+    }
+
+    .judge_01, .judge_02, .judge_03{
+      margin-bottom: 5rem;
+    }
+
+  }
+
+  #award{
+    h3{
+      position: relative;
+      background-image: url(../img/award_tit.png);
+      background-size: calc(100 / 375 * 100vw);
+      margin-top: calc(60 / 375 * 100vw);
+      @include title;
+    }
+
+    h3::before{
+      bottom: calc(40 / 375 * 100vw);
+      left: calc(90 / 375 * 100vw);
+      width: calc(50 / 375 * 100vw);
+      height: calc(50 / 375 * 100vw);
+      background: url(../img/king.png);
+      @include absolute;
+    }
+
+    h3::after{
+      bottom: calc(-60 / 375 * 100vw);
+      left: calc(220 / 375 * 100vw);
+      width: calc(150 / 375 * 100vw);
+      height: calc(160 / 375 * 100vw);
+      background: url(../img/megane.png);
+      @include absolute;
+    }
+
+    .hita, .we{
+      margin-bottom: 2rem;
+    }
+
+    .hita_gp, .hita_au, .hita_shin, .hita_sp, .we_gp, .we_jud, .we_shin{
+      margin-bottom: 3rem;
+    }
+  }
+
+  #movie{
+    h3{
+      position: relative;
+      background-image: url(../img/movie_tit.png);
+      background-size: calc(240 / 375 * 100vw);
+      margin-top: calc(60 / 375 * 100vw);
+      @include title;
+    }
+
+    h3::before{
+      top: calc( 0/ 375*100vw);
+      left: calc(0 / 375 * 100vw);
+      width: calc(35 / 375 * 100vw);
+      height: calc(60 / 375 * 100vw);
+      background: url(../img/corn.png);
+      @include absolute;
+    }
+
+    h3::after{
+      top: calc( 0/ 375*100vw);
+      left: calc(295 / 375 * 100vw);
+      width: calc(35 / 375 * 100vw);
+      height: calc(60 / 375 * 100vw);
+      background: url(../img/juice.png);
+      @include absolute;
+    }
+
+  .theatre{
+    width: 90%;
+    margin: auto;
+
+    img{
+      width: 100%;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .btn_hp{
+    margin: auto;
+    width: 60%;
+
+    img{
+      width: 100%;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  }
+  }
+
+  #contact{
+    h3{
+      position: relative;
+      background-image: url(../img/contact_tit.png);
+      background-size: calc(140 / 375 * 100vw);
+      margin-top: calc(60 / 375 * 100vw);
+      @include title;
+    }
+
+    h3::before{
+      display: none;
+    }
+
+    h3::after{
+      display: none;
+    }
+  }
+}
+
+footer{
+  margin-top: 13rem;
+
+  .con{
+    margin-top: 3rem;
+    height: 32rem;
+    background-color: $cpink;
+  }
+
+  .con::before{
+    position: absolute;
+    content: "";
+    background: url(../img/niisan.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: calc(200 / 375 * 100vw);
+    width: calc(150 / 375 * 100vw);
+    height: calc(190 / 375 * 100vw);
+    bottom: calc(280 / 375 * 100vw);
+  }
+
+  .sns{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+  }
+
+  li{
+    margin: 7rem 3rem;
+  }
+
+  p{
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2rem auto;
+    justify-content: center;
+
+    .hita{
+    img{
+      width: 16rem;
+      margin-right: 2rem;
+    }
+    }
+
+    .pop{
+    img{
+      width: 10rem;
+    }
+    }
+  }
+}

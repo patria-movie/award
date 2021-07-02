@@ -1,0 +1,816 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #80daff;
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 3rem 0 0 1rem;
+}
+
+ul, li {
+  padding: 0;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  background: #ff7176;
+  z-index: 3;
+}
+
+header .nav_btn {
+  position: fixed;
+  top: 1rem;
+  right: 0;
+  z-index: 4;
+}
+
+header .nav_btn #menuToggle {
+  display: none;
+}
+
+.all_container {
+  position: relative;
+  color: #000;
+}
+
+.mv {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vw;
+  top: 6rem;
+}
+
+.mv .kaisai {
+  padding-top: 8rem;
+}
+
+.mv .kaisai h3 {
+  position: absolute;
+  background-image: url(../img/imouto.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -1rem;
+  height: calc(150 / 375 * 100vw);
+  width: calc(320 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
+.mv .logo {
+  position: absolute;
+  width: calc(250 / 375 * 100vw);
+  margin: auto;
+  top: calc(120 / 375 * 100vw);
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.mv h1::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url(../img/otouto.png);
+  background-size: 100%;
+  width: calc(120 / 375 * 100vw);
+  height: calc(120 / 375 * 100vw);
+  left: calc(160 / 375 * 100vw);
+  bottom: calc(-100 / 375 * 100vw);
+}
+
+.mv img {
+  display: block;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  width: 88%;
+  background: rgba(255, 255, 255, 0.6);
+  margin: auto;
+  padding-bottom: 4rem;
+  top: 8rem;
+}
+
+.content p {
+  font-size: 1.3rem;
+  line-height: 2;
+  margin: 0 1rem 2rem 1rem;
+}
+
+.content dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  margin: 2rem;
+}
+
+.content dt {
+  width: 16%;
+}
+
+.content dd {
+  width: 71%;
+  padding-bottom: 2rem;
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+}
+
+.content #about h3 {
+  background-image: url(../img/test_tit.png);
+  background-size: calc(220 / 375 * 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: calc(10 / 375 * 100vw);
+  padding-top: calc(40 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
+.content #aplly_01 h3 {
+  position: relative;
+  background-image: url(../img/ap01_tit.png);
+  background-size: calc(95 / 375 * 100vw);
+  margin-top: calc(60 / 375 * 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: calc(10 / 375 * 100vw);
+  padding-top: calc(40 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
+.content #aplly_01 h3::before {
+  bottom: calc(40 / 375 * 100vw);
+  left: calc(50 / 375 * 100vw);
+  width: calc(70 / 375 * 100vw);
+  height: calc(40 / 375 * 100vw);
+  background: url(../img/yazirusi.png);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content #aplly_01 h3::after {
+  bottom: calc(-80 / 375 * 100vw);
+  left: calc(260 / 375 * 100vw);
+  width: calc(80 / 375 * 100vw);
+  height: calc(180 / 375 * 100vw);
+  background: url(../img/neesan.png);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content #aplly_02 h3 {
+  position: relative;
+  background-image: url(../img/ap02_tit.png);
+  background-size: calc(95 / 375 * 100vw);
+  margin-top: calc(60 / 375 * 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: calc(10 / 375 * 100vw);
+  padding-top: calc(40 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
+.content #aplly_02 p {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.content #aplly_02 p::after {
+  bottom: calc(-20 / 375 * 100vw);
+  left: calc(-10 / 375 * 100vw);
+  width: calc(300 / 375 * 100vw);
+  height: calc(70 / 375 * 100vw);
+  background: url(../img/pencil.png);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content #aplly_02 .submit {
+  margin: auto;
+  width: 80%;
+}
+
+.content #aplly_02 .submit img {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content #judge h5 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content #judge h6 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.content #judge .img_shin {
+  width: 55%;
+  margin: 2rem auto;
+}
+
+.content #judge img {
+  width: 100%;
+}
+
+.content #judge h3 {
+  position: relative;
+  background-image: url(../img/judge_tit.png);
+  background-size: calc(75 / 375 * 100vw);
+  margin-top: calc(0 / 375 * 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: calc(10 / 375 * 100vw);
+  padding-top: calc(40 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
+.content #judge .judge_01, .content #judge .judge_02, .content #judge .judge_03 {
+  margin-bottom: 5rem;
+}
+
+.content #award h3 {
+  position: relative;
+  background-image: url(../img/award_tit.png);
+  background-size: calc(100 / 375 * 100vw);
+  margin-top: calc(60 / 375 * 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: calc(10 / 375 * 100vw);
+  padding-top: calc(40 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
+.content #award h3::before {
+  bottom: calc(40 / 375 * 100vw);
+  left: calc(90 / 375 * 100vw);
+  width: calc(50 / 375 * 100vw);
+  height: calc(50 / 375 * 100vw);
+  background: url(../img/king.png);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content #award h3::after {
+  bottom: calc(-60 / 375 * 100vw);
+  left: calc(220 / 375 * 100vw);
+  width: calc(150 / 375 * 100vw);
+  height: calc(160 / 375 * 100vw);
+  background: url(../img/megane.png);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content #award .hita, .content #award .we {
+  margin-bottom: 2rem;
+}
+
+.content #award .hita_gp, .content #award .hita_au, .content #award .hita_shin, .content #award .hita_sp, .content #award .we_gp, .content #award .we_jud, .content #award .we_shin {
+  margin-bottom: 3rem;
+}
+
+.content #movie h3 {
+  position: relative;
+  background-image: url(../img/movie_tit.png);
+  background-size: calc(240 / 375 * 100vw);
+  margin-top: calc(60 / 375 * 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: calc(10 / 375 * 100vw);
+  padding-top: calc(40 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
+.content #movie h3::before {
+  top: calc( 0/ 375*100vw);
+  left: calc(0 / 375 * 100vw);
+  width: calc(35 / 375 * 100vw);
+  height: calc(60 / 375 * 100vw);
+  background: url(../img/corn.png);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content #movie h3::after {
+  top: calc( 0/ 375*100vw);
+  left: calc(295 / 375 * 100vw);
+  width: calc(35 / 375 * 100vw);
+  height: calc(60 / 375 * 100vw);
+  background: url(../img/juice.png);
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.content #movie .theatre {
+  width: 90%;
+  margin: auto;
+}
+
+.content #movie .theatre img {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content #movie .btn_hp {
+  margin: auto;
+  width: 60%;
+}
+
+.content #movie .btn_hp img {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content #contact h3 {
+  position: relative;
+  background-image: url(../img/contact_tit.png);
+  background-size: calc(140 / 375 * 100vw);
+  margin-top: calc(60 / 375 * 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: calc(10 / 375 * 100vw);
+  padding-top: calc(40 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
+.content #contact h3::before {
+  display: none;
+}
+
+.content #contact h3::after {
+  display: none;
+}
+
+footer {
+  margin-top: 13rem;
+}
+
+footer .con {
+  margin-top: 3rem;
+  height: 32rem;
+  background-color: #ff7176;
+}
+
+footer .con::before {
+  position: absolute;
+  content: "";
+  background: url(../img/niisan.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: calc(200 / 375 * 100vw);
+  width: calc(150 / 375 * 100vw);
+  height: calc(190 / 375 * 100vw);
+  bottom: calc(280 / 375 * 100vw);
+}
+
+footer .sns {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer li {
+  margin: 7rem 3rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .logo .hita img {
+  width: 16rem;
+  margin-right: 2rem;
+}
+
+footer .logo .pop img {
+  width: 10rem;
+}
+
+header .nav_btn {
+  position: fixed;
+  top: 1rem;
+  right: 0;
+  z-index: 5;
+}
+
+header .nav_btn #menuToggle:checked ~ .menuEffects {
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+header .nav_btn #menuToggle:checked ~ .menuEffects ul {
+  opacity: 1;
+}
+
+header .nav_btn #menuToggle:checked ~ .hamburger .open {
+  background-color: transparent;
+}
+
+header .nav_btn #menuToggle:checked ~ .hamburger .open:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #fff;
+  z-index: 5;
+}
+
+header .nav_btn #menuToggle:checked ~ .hamburger .open:after {
+  position: relative;
+  top: 0;
+  right: 0;
+  content: '';
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #fff;
+  z-index: 5;
+}
+
+header .nav_btn #menuToggle:not(:checked) ~ .menuEffects ul {
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+header .nav_btn .hamburger {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 3rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+header .nav_btn .hamburger:hover .open:before {
+  top: -9px;
+}
+
+header .nav_btn .hamburger:hover .open:after {
+  top: 8px;
+}
+
+header .nav_btn .open {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  top: 8px;
+  cursor: pointer;
+}
+
+header .nav_btn .open:before, header .nav_btn .open:after {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .nav_btn .open:before {
+  top: -8px;
+  content: '';
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+header .nav_btn .open:after {
+  top: 7px;
+  content: '';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ff7176;
+}
+
+.menu label {
+  position: absolute;
+  top: 2rem;
+  right: 20rem;
+  width: 30rem;
+  height: 30rem;
+  cursor: pointer;
+  background-size: 100%;
+}
+
+.menu .menucont {
+  position: relative;
+  top: 16%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.menu ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+}
+
+.menu .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .sns li {
+  width: 3rem;
+  margin-right: 2.5rem;
+}
+
+.menu .sns li:nth-of-type(3) {
+  width: 3rem;
+  margin: initial;
+}
+
+.menu ul li {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu ul li a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 2rem 0;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+}
+
+.menuEffects {
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+}
+
+.menuEffects ul {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+@media (min-width: 749px) {
+  header .menucont li {
+    font-size: 2.5rem;
+  }
+  .mv {
+    height: calc(720/1080*100vw);
+  }
+  .mv .kaisai h3 {
+    margin: auto;
+    width: calc(500/1080*100vw);
+    top: calc(-110/1080*100vw);
+    left: 0;
+    right: 0;
+  }
+  .mv .logo {
+    width: calc(550/1080*100vw);
+    top: calc(210/1080*100vw);
+  }
+  .mv h1::after {
+    width: calc(190 / 1080 * 100vw);
+    height: calc(190 / 1080 * 100vw);
+    left: calc(450 / 1080 * 100vw);
+    bottom: calc(-120 / 1080 * 100vw);
+  }
+  .content {
+    max-width: calc(750/1080*100vw);
+    margin-top: 0;
+    padding-bottom: calc(80/1080*100vw);
+  }
+  .content h3 {
+    padding-bottom: 0;
+  }
+  .content h4, .content h5, .content h6 {
+    font-size: 2.5rem;
+  }
+  .content p, .content dl {
+    font-size: 2.5rem;
+    margin: 0 4rem 4rem 4rem;
+  }
+  .content .btn_sub img {
+    margin-bottom: 4rem;
+  }
+  .content #about h3 {
+    background-size: calc(450 / 1080 * 100vw);
+  }
+  .content #aplly_01 h3 {
+    background-size: calc(180/1080*100vw);
+    margin-top: calc(100/1080*100vw);
+  }
+  .content #aplly_01 h3::before {
+    bottom: calc(100/1080*100vw);
+    left: calc(160/1080*100vw);
+    width: calc(120/1080*100vw);
+    height: calc(60/1080*100vw);
+  }
+  .content #aplly_01 h3::after {
+    bottom: calc(-190 / 1080 * 100vw);
+    left: calc(600 / 1080 * 100vw);
+    width: calc(140 / 1080 * 100vw);
+    height: calc(330 / 1080 * 100vw);
+  }
+  .content #aplly_02 h3 {
+    background-size: calc(180 / 1080 * 100vw);
+    padding-top: calc(120 / 1080 * 100vw);
+  }
+  .content #aplly_02 p {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .content #aplly_02 p::after {
+    left: calc(-10/1080*100vw);
+    bottom: calc(-50/1080*100vw);
+    width: calc(600/1080*100vw);
+    height: calc(130/1080*100vw);
+  }
+  .content #aplly_02 .submit {
+    margin-top: calc(60/1080*100vw);
+  }
+  .content #judge h3 {
+    background-size: calc(150/1080*100vw);
+    margin-top: calc(100/1080*100vw);
+  }
+  .content #judge h5 {
+    font-size: 4rem;
+  }
+  .content #judge h6 {
+    font-size: 4rem;
+  }
+  .content #judge .judge_01, .content #judge .judge_02 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 4rem;
+  }
+  .content #judge .img_shin {
+    width: 25%;
+    margin: 0 auto;
+  }
+  .content #judge .text {
+    width: 65%;
+  }
+  .content #award h3 {
+    background-size: calc(180/1080*100vw);
+    padding-top: calc(100/1080*100vw);
+  }
+  .content #award h3::before {
+    bottom: calc(100/1080*100vw);
+    left: calc(180/1080*100vw);
+    width: calc(100/1080*100vw);
+    height: calc(90/1080*100vw);
+  }
+  .content #award h3::after {
+    bottom: calc(-80/1080*100vw);
+    left: calc(530 / 1080 * 100vw);
+    width: calc(300/1080*100vw);
+    height: calc(320/1080*100vw);
+  }
+  .content #movie h3 {
+    background-size: calc(550/1080*100vw);
+  }
+  .content #movie h3::before {
+    left: calc(0/1080*100vw);
+    width: calc(80/1080*100vw);
+    height: calc(130/1080*100vw);
+  }
+  .content #movie h3::after {
+    left: calc(670/1080*100vw);
+    width: calc(80/1080*100vw);
+    height: calc(130/1080*100vw);
+  }
+  .content #contact h3 {
+    background-size: calc(250/1080*100vw);
+    margin-top: calc(100/1080*100vw);
+  }
+  footer .con::before {
+    left: calc(600/1080*100vw);
+    width: calc(300/1080*100vw);
+    height: calc(370/1080*100vw);
+    bottom: calc(100/1080*100vw);
+  }
+}
+
+@media print {
+  /******************************************************************
+
+Stylesheet: プリンタのみに適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=index.css.map */

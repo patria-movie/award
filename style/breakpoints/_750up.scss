@@ -1,0 +1,190 @@
+header{
+    .menucont{
+        li{
+        font-size: 2.5rem;
+        }
+    }
+}
+
+.mv{
+    height: calc(720/1080*100vw);
+    .kaisai{
+        h3{
+            margin: auto;
+            width: calc(500/1080*100vw);
+            top: calc(-110/1080*100vw);
+            left: 0;
+            right: 0;
+        }
+    }
+    .logo{
+        width: calc(550/1080*100vw);
+        top: calc(210/1080*100vw);
+    }
+
+    h1::after{
+        width: calc(190 / 1080 * 100vw);
+        height: calc(190 / 1080 * 100vw);
+        left: calc(450 / 1080 * 100vw);
+        bottom: calc(-120 / 1080 * 100vw);
+    }
+}
+
+.content{
+    max-width: calc(750/1080*100vw);
+    margin-top: 0;
+    padding-bottom: calc(80/1080*100vw);
+
+    h3{
+        padding-bottom: 0;
+    }
+
+    h4, h5, h6{
+        font-size: 2.5rem;
+    }
+
+    p, dl{
+        font-size: 2.5rem;
+        margin: 0 4rem 4rem 4rem;
+    }
+
+    .btn_sub img{
+        margin-bottom: 4rem;
+    }
+
+    #about{
+        h3{
+            background-size: calc(450 / 1080 * 100vw);
+        }
+    }
+
+    #aplly_01{
+        h3{
+            background-size: calc(180/1080*100vw);
+            margin-top: calc(100/1080*100vw);
+        }
+
+        h3::before{
+            bottom: calc(100/1080*100vw);
+            left: calc(160/1080*100vw);
+            width: calc(120/1080*100vw);
+            height: calc(60/1080*100vw);
+        }
+
+        h3::after{
+            bottom: calc(-190 / 1080 * 100vw);
+            left: calc(600 / 1080 * 100vw);
+            width: calc(140 / 1080 * 100vw);
+            height: calc(330 / 1080 * 100vw);
+        }
+    }
+
+    #aplly_02{
+        h3{
+            background-size: calc(180 / 1080 * 100vw);
+            padding-top: calc(120 / 1080 * 100vw);
+        }
+
+        p{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        p::after{
+            left: calc(-10/1080*100vw);
+            bottom: calc(-50/1080*100vw);
+            width: calc(600/1080*100vw);
+            height: calc(130/1080*100vw);
+        }
+
+        .submit{
+            margin-top: calc(60/1080*100vw);
+        }
+    }
+
+
+    #judge{
+        h3{
+            background-size: calc(150/1080*100vw);
+            margin-top: calc(100/1080*100vw);
+        }
+
+        h5{
+            font-size: 4rem;
+        }
+
+        h6{
+            font-size: 4rem;
+        }
+
+        .judge_01, .judge_02{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+        }
+
+        .img_shin{
+            width: 25%;
+            margin: 0 auto;
+        }
+
+        .text{
+            width: 65%;
+        }
+    }
+
+    #award{
+        h3{
+            background-size: calc(180/1080*100vw);
+            padding-top: calc(100/1080*100vw);
+        }
+
+        h3::before{
+            bottom: calc(100/1080*100vw);
+            left: calc(180/1080*100vw);
+            width: calc(100/1080*100vw);
+            height: calc(90/1080*100vw);
+        }
+
+        h3::after{
+            bottom: calc(-80/1080*100vw);
+            left: calc(530 / 1080 * 100vw);
+            width: calc(300/1080*100vw);
+            height: calc(320/1080*100vw);
+        }
+    }
+
+    #movie{
+        h3{
+            background-size: calc(550/1080*100vw);
+        }
+
+        h3::before{
+            left: calc(0/1080*100vw);
+            width: calc(80/1080*100vw);
+            height: calc(130/1080*100vw);
+        }
+
+        h3::after{
+            left: calc(670/1080*100vw);
+            width: calc(80/1080*100vw);
+            height: calc(130/1080*100vw);
+        }
+    }
+
+    #contact{
+        h3{
+            background-size: calc(250/1080*100vw);
+            margin-top: calc(100/1080*100vw);
+        }
+    }
+    }
+
+    footer{
+        .con::before{
+            left: calc(600/1080*100vw);
+            width: calc(300/1080*100vw);
+            height: calc(370/1080*100vw);
+            bottom: calc(100/1080*100vw);
+        }
+        }
