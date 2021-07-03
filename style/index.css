@@ -229,16 +229,55 @@ header .nav_btn #menuToggle {
 }
 
 .content #aplly_02 .submit {
-  margin: auto;
-  width: 80%;
+  margin: 4rem auto;
+  width: 30rem;
 }
 
-.content #aplly_02 .submit img {
+.content #aplly_02 .submit a {
+  position: relative;
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: bold;
+  background: #ff7176;
+  padding: 1rem 9.6rem;
+  border-radius: 60px;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 0 auto;
+}
+
+.content #aplly_02 .submit a::before {
+  content: "";
+  position: absolute;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 3px solid #ff7176;
+  border-radius: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: -1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 0;
+  -webkit-transition: opacity .3s, -webkit-transform ease .3s;
+  transition: opacity .3s, -webkit-transform ease .3s;
+  transition: transform ease .3s, opacity .3s;
+  transition: transform ease .3s, opacity .3s, -webkit-transform ease .3s;
+}
+
+.content #aplly_02 .submit a:hover {
+  color: #ff7176;
+  background: transparent;
+}
+
+.content #aplly_02 .submit a:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
 
 .content #judge h5 {
@@ -371,15 +410,54 @@ header .nav_btn #menuToggle {
 
 .content #movie .btn_hp {
   margin: auto;
-  width: 60%;
+  width: 28.2rem;
 }
 
-.content #movie .btn_hp img {
+.content #movie .btn_hp a {
+  position: relative;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #ff7176;
+  padding: 1rem 4rem;
+  border-radius: 70px;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 0 auto;
+}
+
+.content #movie .btn_hp a::before {
+  content: "";
+  position: absolute;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 3px solid #ff7176;
+  border-radius: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: -1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 0;
+  -webkit-transition: opacity .3s, -webkit-transform ease .3s;
+  transition: opacity .3s, -webkit-transform ease .3s;
+  transition: transform ease .3s, opacity .3s;
+  transition: transform ease .3s, opacity .3s, -webkit-transform ease .3s;
+}
+
+.content #movie .btn_hp a:hover {
+  color: #ff7176;
+  background: transparent;
+}
+
+.content #movie .btn_hp a:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
 
 .content #contact h3 {
@@ -408,20 +486,25 @@ footer {
 
 footer .con {
   margin-top: 3rem;
-  height: 32rem;
+  height: 42rem;
   background-color: #ff7176;
 }
 
-footer .con::before {
+footer h3 {
+  position: relative;
+  text-indent: -9999px;
+}
+
+footer h3::before {
   position: absolute;
   content: "";
   background: url(../img/niisan.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  left: calc(200 / 375 * 100vw);
-  width: calc(150 / 375 * 100vw);
-  height: calc(190 / 375 * 100vw);
-  bottom: calc(280 / 375 * 100vw);
+  left: calc(180 / 375 * 100vw);
+  width: calc(170 / 375 * 100vw);
+  height: calc(210 / 375 * 100vw);
+  top: calc(-150 / 375 * 100vw);
 }
 
 footer .sns {
@@ -445,6 +528,8 @@ footer li {
 footer p {
   text-align: center;
   font-size: 1.3rem;
+  line-height: 2.5rem;
+  margin: 3rem 0;
 }
 
 footer .logo {
@@ -694,10 +779,10 @@ a:visited, a:hover, a:active {
     padding-bottom: 0;
   }
   .content h4, .content h5, .content h6 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .content p, .content dl {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin: 0 4rem 4rem 4rem;
   }
   .content .btn_sub img {
@@ -737,7 +822,13 @@ a:visited, a:hover, a:active {
     height: calc(130/1080*100vw);
   }
   .content #aplly_02 .submit {
-    margin-top: calc(60/1080*100vw);
+    margin-top: calc(80/1080*100vw);
+    width: 50rem;
+  }
+  .content #aplly_02 .submit a {
+    font-size: 3.5rem;
+    padding: 2rem 16rem;
+    letter-spacing: 0.2em;
   }
   .content #judge h3 {
     background-size: calc(150/1080*100vw);
@@ -794,15 +885,23 @@ a:visited, a:hover, a:active {
     width: calc(80/1080*100vw);
     height: calc(130/1080*100vw);
   }
+  .content #movie .btn_hp {
+    width: 45rem;
+  }
+  .content #movie .btn_hp a {
+    font-size: 3.5rem;
+    padding: 2rem 4rem;
+    letter-spacing: 0.1em;
+  }
   .content #contact h3 {
     background-size: calc(250/1080*100vw);
     margin-top: calc(100/1080*100vw);
   }
-  footer .con::before {
+  footer h3::before {
     left: calc(600/1080*100vw);
     width: calc(300/1080*100vw);
     height: calc(370/1080*100vw);
-    bottom: calc(100/1080*100vw);
+    top: calc(-250/1080*100vw);
   }
 }
 

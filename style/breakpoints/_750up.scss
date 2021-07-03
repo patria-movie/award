@@ -8,6 +8,7 @@ header{
 
 .mv{
     height: calc(720/1080*100vw);
+
     .kaisai{
         h3{
             margin: auto;
@@ -40,11 +41,11 @@ header{
     }
 
     h4, h5, h6{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     p, dl{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         margin: 0 4rem 4rem 4rem;
     }
 
@@ -98,7 +99,15 @@ header{
         }
 
         .submit{
-            margin-top: calc(60/1080*100vw);
+            margin-top: calc(80/1080*100vw);
+            width: 50rem;
+
+        a{
+            font-size: 3.5rem;
+            padding: 2rem 16rem;
+            letter-spacing: 0.2em;
+        }
+
         }
     }
 
@@ -170,6 +179,16 @@ header{
             width: calc(80/1080*100vw);
             height: calc(130/1080*100vw);
         }
+
+        .btn_hp{
+            width: 45rem;
+
+            a{
+                font-size: 3.5rem;
+                padding: 2rem 4rem;
+                letter-spacing: 0.1em;
+            }
+        }
     }
 
     #contact{
@@ -181,10 +200,10 @@ header{
     }
 
     footer{
-        .con::before{
+        h3::before{
             left: calc(600/1080*100vw);
             width: calc(300/1080*100vw);
             height: calc(370/1080*100vw);
-            bottom: calc(100/1080*100vw);
+            top: calc(-250/1080*100vw);
         }
         }
