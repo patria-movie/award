@@ -46,7 +46,7 @@ header{
 
     p, dl{
         font-size: 1.8rem;
-        margin: 0 4rem 4rem 4rem;
+        margin: 4rem;
     }
 
     .btn_sub img{
@@ -55,19 +55,21 @@ header{
 
     #about{
         h3{
-            background-size: calc(450 / 1080 * 100vw);
+            background-size: calc(350 / 1080 * 100vw);
+            padding-top: calc(50/1080*100vw);
         }
     }
 
     #aplly_01{
         h3{
-            background-size: calc(180/1080*100vw);
+            background-size: calc(140/1080*100vw);
             margin-top: calc(100/1080*100vw);
+            padding-top: calc(20/1080*100vw);
         }
 
         h3::before{
-            bottom: calc(100/1080*100vw);
-            left: calc(160/1080*100vw);
+            bottom: calc(50/1080*100vw);
+            left: calc(190/1080*100vw);
             width: calc(120/1080*100vw);
             height: calc(60/1080*100vw);
         }
@@ -82,8 +84,9 @@ header{
 
     #aplly_02{
         h3{
-            background-size: calc(180 / 1080 * 100vw);
-            padding-top: calc(120 / 1080 * 100vw);
+            background-size: calc(140 / 1080 * 100vw);
+            padding-top: calc(50 / 1080 * 100vw);
+            margin-top: calc(80 /1080*100vw);
         }
 
         p{
@@ -93,7 +96,7 @@ header{
 
         p::after{
             left: calc(-10/1080*100vw);
-            bottom: calc(-50/1080*100vw);
+            bottom: calc(-30/1080*100vw);
             width: calc(600/1080*100vw);
             height: calc(130/1080*100vw);
         }
@@ -114,7 +117,7 @@ header{
 
     #judge{
         h3{
-            background-size: calc(150/1080*100vw);
+            background-size: calc(115/1080*100vw);
             margin-top: calc(100/1080*100vw);
         }
 
@@ -138,25 +141,28 @@ header{
         }
 
         .text{
+            margin-top: -2rem;
             width: 65%;
         }
     }
 
     #award{
         h3{
-            background-size: calc(180/1080*100vw);
-            padding-top: calc(100/1080*100vw);
+            background-size: calc(155/1080*100vw);
+            padding-top: calc(0/1080*100vw);
+            margin-top: calc(140/1080*100vw);
         }
+        
 
         h3::before{
-            bottom: calc(100/1080*100vw);
-            left: calc(180/1080*100vw);
-            width: calc(100/1080*100vw);
-            height: calc(90/1080*100vw);
+            bottom: calc(-13/1080*100vw);
+            left: calc(250/1080*100vw);
+            width: calc(70/1080*100vw);
+            height: calc(120/1080*100vw);
         }
 
         h3::after{
-            bottom: calc(-80/1080*100vw);
+            bottom: calc(-120/1080*100vw);
             left: calc(530 / 1080 * 100vw);
             width: calc(300/1080*100vw);
             height: calc(320/1080*100vw);
@@ -165,19 +171,21 @@ header{
 
     #movie{
         h3{
-            background-size: calc(550/1080*100vw);
+            background-size: calc(450/1080*100vw);
         }
 
         h3::before{
-            left: calc(0/1080*100vw);
-            width: calc(80/1080*100vw);
-            height: calc(130/1080*100vw);
+            left: calc(75/1080*100vw);
+            width: calc(60/1080*100vw);
+            height: calc(100/1080*100vw);
+            top: calc(-40/1080*100vw);
         }
 
         h3::after{
-            left: calc(670/1080*100vw);
-            width: calc(80/1080*100vw);
-            height: calc(130/1080*100vw);
+            left: calc(610/1080*100vw);
+            width: calc(60/1080*100vw);
+            height: calc(100/1080*100vw);
+            top: calc(-40/1080*100vw);
         }
 
         .btn_hp{
@@ -193,7 +201,7 @@ header{
 
     #contact{
         h3{
-            background-size: calc(250/1080*100vw);
+            background-size: calc(200/1080*100vw);
             margin-top: calc(100/1080*100vw);
         }
     }

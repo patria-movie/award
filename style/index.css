@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -82,8 +81,8 @@ header .nav_btn #menuToggle {
   background-repeat: no-repeat;
   background-position: center;
   top: -1rem;
-  height: calc(150 / 375 * 100vw);
-  width: calc(320 / 375 * 100vw);
+  height: calc(120 / 375 * 100vw);
+  width: calc(240 / 375 * 100vw);
   text-indent: -9999%;
 }
 
@@ -103,15 +102,36 @@ header .nav_btn #menuToggle {
   background-repeat: no-repeat;
   background-image: url(../img/otouto.png);
   background-size: 100%;
-  width: calc(120 / 375 * 100vw);
-  height: calc(120 / 375 * 100vw);
-  left: calc(160 / 375 * 100vw);
-  bottom: calc(-100 / 375 * 100vw);
+  width: calc(90 / 375 * 100vw);
+  height: calc(100 / 375 * 100vw);
+  left: calc(190 / 375 * 100vw);
+  bottom: calc(-49 / 375 * 100vw);
 }
 
 .mv img {
   display: block;
   width: 100%;
+  margin-top: -5rem;
+}
+
+.mv .tit_pop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 26rem auto 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mv .tit_pop img {
+  width: 7rem;
+  margin-right: 1rem;
+}
+
+.mv .under_tit {
+  width: 37rem;
+  margin-top: 7rem;
 }
 
 .content {
@@ -120,7 +140,7 @@ header .nav_btn #menuToggle {
   background: rgba(255, 255, 255, 0.6);
   margin: auto;
   padding-bottom: 4rem;
-  top: 8rem;
+  top: 17rem;
 }
 
 .content p {
@@ -359,6 +379,10 @@ header .nav_btn #menuToggle {
   margin-bottom: 3rem;
 }
 
+.content #award .shingeki p {
+  font-weight: bold;
+}
+
 .content #movie h3 {
   position: relative;
   background-image: url(../img/movie_tit.png);
@@ -481,7 +505,7 @@ header .nav_btn #menuToggle {
 }
 
 footer {
-  margin-top: 13rem;
+  margin-top: 23rem;
 }
 
 footer .con {
@@ -783,21 +807,23 @@ a:visited, a:hover, a:active {
   }
   .content p, .content dl {
     font-size: 1.8rem;
-    margin: 0 4rem 4rem 4rem;
+    margin: 4rem;
   }
   .content .btn_sub img {
     margin-bottom: 4rem;
   }
   .content #about h3 {
-    background-size: calc(450 / 1080 * 100vw);
+    background-size: calc(350 / 1080 * 100vw);
+    padding-top: calc(50/1080*100vw);
   }
   .content #aplly_01 h3 {
-    background-size: calc(180/1080*100vw);
+    background-size: calc(140/1080*100vw);
     margin-top: calc(100/1080*100vw);
+    padding-top: calc(20/1080*100vw);
   }
   .content #aplly_01 h3::before {
-    bottom: calc(100/1080*100vw);
-    left: calc(160/1080*100vw);
+    bottom: calc(50/1080*100vw);
+    left: calc(190/1080*100vw);
     width: calc(120/1080*100vw);
     height: calc(60/1080*100vw);
   }
@@ -808,8 +834,9 @@ a:visited, a:hover, a:active {
     height: calc(330 / 1080 * 100vw);
   }
   .content #aplly_02 h3 {
-    background-size: calc(180 / 1080 * 100vw);
-    padding-top: calc(120 / 1080 * 100vw);
+    background-size: calc(140 / 1080 * 100vw);
+    padding-top: calc(50 / 1080 * 100vw);
+    margin-top: calc(80 /1080*100vw);
   }
   .content #aplly_02 p {
     font-size: 3rem;
@@ -817,7 +844,7 @@ a:visited, a:hover, a:active {
   }
   .content #aplly_02 p::after {
     left: calc(-10/1080*100vw);
-    bottom: calc(-50/1080*100vw);
+    bottom: calc(-30/1080*100vw);
     width: calc(600/1080*100vw);
     height: calc(130/1080*100vw);
   }
@@ -831,7 +858,7 @@ a:visited, a:hover, a:active {
     letter-spacing: 0.2em;
   }
   .content #judge h3 {
-    background-size: calc(150/1080*100vw);
+    background-size: calc(115/1080*100vw);
     margin-top: calc(100/1080*100vw);
   }
   .content #judge h5 {
@@ -854,36 +881,40 @@ a:visited, a:hover, a:active {
     margin: 0 auto;
   }
   .content #judge .text {
+    margin-top: -2rem;
     width: 65%;
   }
   .content #award h3 {
-    background-size: calc(180/1080*100vw);
-    padding-top: calc(100/1080*100vw);
+    background-size: calc(155/1080*100vw);
+    padding-top: calc(0/1080*100vw);
+    margin-top: calc(140/1080*100vw);
   }
   .content #award h3::before {
-    bottom: calc(100/1080*100vw);
-    left: calc(180/1080*100vw);
-    width: calc(100/1080*100vw);
-    height: calc(90/1080*100vw);
+    bottom: calc(-13/1080*100vw);
+    left: calc(250/1080*100vw);
+    width: calc(70/1080*100vw);
+    height: calc(120/1080*100vw);
   }
   .content #award h3::after {
-    bottom: calc(-80/1080*100vw);
+    bottom: calc(-120/1080*100vw);
     left: calc(530 / 1080 * 100vw);
     width: calc(300/1080*100vw);
     height: calc(320/1080*100vw);
   }
   .content #movie h3 {
-    background-size: calc(550/1080*100vw);
+    background-size: calc(450/1080*100vw);
   }
   .content #movie h3::before {
-    left: calc(0/1080*100vw);
-    width: calc(80/1080*100vw);
-    height: calc(130/1080*100vw);
+    left: calc(75/1080*100vw);
+    width: calc(60/1080*100vw);
+    height: calc(100/1080*100vw);
+    top: calc(-40/1080*100vw);
   }
   .content #movie h3::after {
-    left: calc(670/1080*100vw);
-    width: calc(80/1080*100vw);
-    height: calc(130/1080*100vw);
+    left: calc(610/1080*100vw);
+    width: calc(60/1080*100vw);
+    height: calc(100/1080*100vw);
+    top: calc(-40/1080*100vw);
   }
   .content #movie .btn_hp {
     width: 45rem;
@@ -894,7 +925,7 @@ a:visited, a:hover, a:active {
     letter-spacing: 0.1em;
   }
   .content #contact h3 {
-    background-size: calc(250/1080*100vw);
+    background-size: calc(200/1080*100vw);
     margin-top: calc(100/1080*100vw);
   }
   footer h3::before {

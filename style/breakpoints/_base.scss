@@ -9,7 +9,6 @@ html {
     box-sizing: border-box;
 }
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 body{
   background: $cblue;
   font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
@@ -82,8 +81,8 @@ header{
       background-repeat: no-repeat;
       background-position: center;
       top: -1rem;
-      height: calc(150 / 375 * 100vw);
-      width: calc(320 / 375 * 100vw);
+      height: calc(120 / 375 * 100vw);
+      width: calc(240 / 375 * 100vw);
       text-indent: -9999%;
     }
   }
@@ -104,15 +103,32 @@ header{
     background-repeat: no-repeat;
     background-image: url(../img/otouto.png);
     background-size: 100%;
-    width: calc(120 / 375 * 100vw);
-    height: calc(120 / 375 * 100vw);
-    left: calc(160 / 375 * 100vw);
-    bottom: calc(-100 / 375 * 100vw);
+    width: calc(90 / 375 * 100vw);
+    height: calc(100 / 375 * 100vw);
+    left: calc(190 / 375 * 100vw);
+    bottom: calc(-49 / 375 * 100vw);
   }
 
   img{
     display: block;
     width: 100%;
+    margin-top: -5rem;
+  }
+
+  .tit_pop{
+    display: flex;
+    margin: 26rem auto 0;
+    justify-content: center;
+
+    img{
+      width: 7rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .under_tit{
+    width: 37rem;
+    margin-top: 7rem;
   }
 }
 
@@ -122,7 +138,7 @@ header{
   background: rgba(255, 255, 255, 0.6);
   margin: auto;
   padding-bottom: 4rem;
-  top: 8rem;
+  top: 17rem;
 
   p{
     font-size: 1.3rem;
@@ -340,6 +356,12 @@ header{
     .hita_gp, .hita_au, .hita_shin, .hita_sp, .we_gp, .we_jud, .we_shin{
       margin-bottom: 3rem;
     }
+
+    .shingeki{
+      p{
+        font-weight: bold;
+      }
+    }
   }
 
   #movie{
@@ -447,7 +469,7 @@ header{
 }
 
 footer{
-  margin-top: 13rem;
+  margin-top: 23rem;
 
   .con{
     margin-top: 3rem;
