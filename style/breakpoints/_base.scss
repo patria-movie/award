@@ -117,6 +117,8 @@ header{
 
   .tit_pop{
     display: flex;
+    display:-webkit-box;
+  	display:-ms-flexbox;
     margin: auto 0;
     margin-top: calc(280/375*100vw);
     justify-content: center;
@@ -243,7 +245,7 @@ header{
 
     .submit{
       margin: 4rem auto;
-      width: 30rem;
+      width: 26.8rem;
 
 
       a {
@@ -252,7 +254,7 @@ header{
         font-size: 2.7rem;
         font-weight: bold;
         background: #ff7176;
-        padding: 1rem 9.6rem;
+        padding: 1rem 8rem;
         border-radius: 60px;
         z-index: 1;
         display: inline-block;
@@ -464,7 +466,7 @@ header{
 }
 
 footer{
-  margin-top: 23rem;
+  margin-top: calc(260/375*100vw);
 
   .con{
     margin-top: 3rem;
@@ -492,6 +494,8 @@ footer{
   .sns{
     position: relative;
     display: flex;
+    display:-webkit-box;
+  	display:-ms-flexbox;
     align-items: center;
     margin: auto;
     justify-content: center;

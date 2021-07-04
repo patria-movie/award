@@ -115,9 +115,9 @@ header .nav_btn #menuToggle {
 }
 
 .mv .tit_pop {
+  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   margin: auto 0;
   margin-top: calc(280/375*100vw);
   -webkit-box-pack: center;
@@ -251,7 +251,7 @@ header .nav_btn #menuToggle {
 
 .content #aplly_02 .submit {
   margin: 4rem auto;
-  width: 30rem;
+  width: 26.8rem;
 }
 
 .content #aplly_02 .submit a {
@@ -260,7 +260,7 @@ header .nav_btn #menuToggle {
   font-size: 2.7rem;
   font-weight: bold;
   background: #ff7176;
-  padding: 1rem 9.6rem;
+  padding: 1rem 8rem;
   border-radius: 60px;
   z-index: 1;
   display: inline-block;
@@ -502,7 +502,7 @@ header .nav_btn #menuToggle {
 }
 
 footer {
-  margin-top: 23rem;
+  margin-top: calc(260/375*100vw);
 }
 
 footer .con {
@@ -530,9 +530,9 @@ footer h3::before {
 
 footer .sns {
   position: relative;
+  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
