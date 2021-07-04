@@ -12,22 +12,35 @@ header{
     .kaisai{
         h3{
             margin: auto;
-            width: calc(500/1080*100vw);
-            top: calc(-110/1080*100vw);
-            left: 0;
-            right: 0;
+            width: calc(350/1080*100vw);
+            top: calc(-100/1080*100vw);
+            left: calc(200/1080*100vw);
         }
     }
     .logo{
         width: calc(550/1080*100vw);
-        top: calc(210/1080*100vw);
+        top: calc(140/1080*100vw);
     }
 
     h1::after{
-        width: calc(190 / 1080 * 100vw);
+        width: calc(160 / 1080 * 100vw);
         height: calc(190 / 1080 * 100vw);
         left: calc(450 / 1080 * 100vw);
-        bottom: calc(-120 / 1080 * 100vw);
+        bottom: calc(-80 / 1080 * 100vw);
+    }
+
+    .tit_pop{
+        margin-top: calc(560/1080*100vw);
+
+        img{
+            width: alc(65/375*100vw);
+        }
+    }
+
+    .under_tit{
+        width: calc(800/1080*100vw);
+        margin: 0 auto;
+        margin-top: calc(100/1080*100vw);
     }
 }
 
@@ -35,6 +48,7 @@ header{
     max-width: calc(750/1080*100vw);
     margin-top: 0;
     padding-bottom: calc(80/1080*100vw);
+    top: calc(450/1080*100vw);
 
     h3{
         padding-bottom: 0;
@@ -208,6 +222,9 @@ header{
     }
 
     footer{
+
+        margin-top:calc(500/1080*100vw);
+        
         h3::before{
             left: calc(600/1080*100vw);
             width: calc(300/1080*100vw);

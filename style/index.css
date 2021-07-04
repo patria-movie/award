@@ -118,20 +118,21 @@ header .nav_btn #menuToggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 26rem auto 0;
+  margin: auto 0;
+  margin-top: calc(280/375*100vw);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .mv .tit_pop img {
-  width: 7rem;
+  width: calc(78/375*100vw);
   margin-right: 1rem;
 }
 
 .mv .under_tit {
-  width: 37rem;
-  margin-top: 7rem;
+  width: calc(373/375*100vw);
+  margin-top: calc(70/375*100vw);
 }
 
 .content {
@@ -139,8 +140,8 @@ header .nav_btn #menuToggle {
   width: 88%;
   background: rgba(255, 255, 255, 0.6);
   margin: auto;
-  padding-bottom: 4rem;
-  top: 17rem;
+  padding-bottom: calc(60/375*100vw);
+  top: calc(220/375*100vw);
 }
 
 .content p {
@@ -161,11 +162,11 @@ header .nav_btn #menuToggle {
 }
 
 .content dt {
-  width: 16%;
+  width: 19%;
 }
 
 .content dd {
-  width: 71%;
+  width: 63%;
   padding-bottom: 2rem;
   -webkit-margin-start: 30px;
           margin-inline-start: 30px;
@@ -377,10 +378,6 @@ header .nav_btn #menuToggle {
 
 .content #award .hita_gp, .content #award .hita_au, .content #award .hita_shin, .content #award .hita_sp, .content #award .we_gp, .content #award .we_jud, .content #award .we_shin {
   margin-bottom: 3rem;
-}
-
-.content #award .shingeki p {
-  font-weight: bold;
 }
 
 .content #movie h3 {
@@ -779,25 +776,36 @@ a:visited, a:hover, a:active {
   }
   .mv .kaisai h3 {
     margin: auto;
-    width: calc(500/1080*100vw);
-    top: calc(-110/1080*100vw);
-    left: 0;
-    right: 0;
+    width: calc(350/1080*100vw);
+    top: calc(-100/1080*100vw);
+    left: calc(200/1080*100vw);
   }
   .mv .logo {
     width: calc(550/1080*100vw);
-    top: calc(210/1080*100vw);
+    top: calc(140/1080*100vw);
   }
   .mv h1::after {
-    width: calc(190 / 1080 * 100vw);
+    width: calc(160 / 1080 * 100vw);
     height: calc(190 / 1080 * 100vw);
     left: calc(450 / 1080 * 100vw);
-    bottom: calc(-120 / 1080 * 100vw);
+    bottom: calc(-80 / 1080 * 100vw);
+  }
+  .mv .tit_pop {
+    margin-top: calc(560/1080*100vw);
+  }
+  .mv .tit_pop img {
+    width: alc(17.33333vw);
+  }
+  .mv .under_tit {
+    width: calc(800/1080*100vw);
+    margin: 0 auto;
+    margin-top: calc(100/1080*100vw);
   }
   .content {
     max-width: calc(750/1080*100vw);
     margin-top: 0;
     padding-bottom: calc(80/1080*100vw);
+    top: calc(450/1080*100vw);
   }
   .content h3 {
     padding-bottom: 0;
@@ -927,6 +935,9 @@ a:visited, a:hover, a:active {
   .content #contact h3 {
     background-size: calc(200/1080*100vw);
     margin-top: calc(100/1080*100vw);
+  }
+  footer {
+    margin-top: calc(500/1080*100vw);
   }
   footer h3::before {
     left: calc(600/1080*100vw);
