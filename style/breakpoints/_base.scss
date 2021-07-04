@@ -218,6 +218,16 @@ header{
     }
   }
 
+  #aplly_015{
+    h3{
+      position: relative;
+      background-image: url(../img/ap15_tit.png);
+      background-size: calc(98 / 375 * 100vw);
+      margin-top: calc(30 / 375 * 100vw);
+      @include title;
+    }
+  }
+
   #aplly_02{
     h3{
       position: relative;

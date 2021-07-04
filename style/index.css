@@ -218,6 +218,18 @@ header .nav_btn #menuToggle {
   background-size: 100%;
 }
 
+.content #aplly_015 h3 {
+  position: relative;
+  background-image: url(../img/ap15_tit.png);
+  background-size: calc(98 / 375 * 100vw);
+  margin-top: calc(30 / 375 * 100vw);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: calc(10 / 375 * 100vw);
+  padding-top: calc(40 / 375 * 100vw);
+  text-indent: -9999%;
+}
+
 .content #aplly_02 h3 {
   position: relative;
   background-image: url(../img/ap02_tit.png);
@@ -840,6 +852,11 @@ a:visited, a:hover, a:active {
     left: calc(600 / 1080 * 100vw);
     width: calc(140 / 1080 * 100vw);
     height: calc(330 / 1080 * 100vw);
+  }
+  .content #aplly_015 h3 {
+    background-size: calc(140/1080*100vw);
+    margin-top: calc(100/1080*100vw);
+    padding-top: calc(20/1080*100vw);
   }
   .content #aplly_02 h3 {
     background-size: calc(140 / 1080 * 100vw);
