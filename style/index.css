@@ -210,7 +210,7 @@ header .nav_btn #menuToggle {
   bottom: calc(-30 / 375 * 100vw);
   left: calc(260 / 375 * 100vw);
   width: calc(65 / 375 * 100vw);
-  height: calc(180 / 375 * 100vw);
+  height: calc(150 / 375 * 100vw);
   background: url(../img/neesan.png);
   position: absolute;
   content: "";
