@@ -122,6 +122,7 @@ header{
   	display:-ms-flexbox;
     margin: auto 0;
     margin-top: calc(280/375*100vw);
+    padding-bottom: calc(90/375*100vw);
     justify-content: center;
 
   .tit_01{
@@ -154,9 +155,10 @@ header{
   }
 
   .under_tit{
+    display: inline-block;
     width: calc(373/375*100vw);
-    margin-top: calc(90/375*100vw);
-  }
+    margin-top: calc(5/375*100vw);
+    }
 }
 
 .content{

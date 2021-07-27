@@ -121,6 +121,7 @@ header .nav_btn #menuToggle {
   display: -ms-flexbox;
   margin: auto 0;
   margin-top: calc(280/375*100vw);
+  padding-bottom: calc(90/375*100vw);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -155,8 +156,9 @@ header .nav_btn #menuToggle {
 }
 
 .mv .under_tit {
+  display: inline-block;
   width: calc(373/375*100vw);
-  margin-top: calc(90/375*100vw);
+  margin-top: calc(5/375*100vw);
 }
 
 .content {
@@ -841,9 +843,7 @@ a:visited, a:hover, a:active {
     width: alc(17.33333vw);
   }
   .mv .under_tit {
-    width: calc(800/1080*100vw);
-    margin: 0 auto;
-    margin-top: calc(270/1080*100vw);
+    width: calc(1000/1080*100vw);
   }
   .content {
     max-width: calc(750/1080*100vw);
