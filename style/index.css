@@ -115,6 +115,7 @@ header .nav_btn #menuToggle {
 }
 
 .mv .tit_pop {
+  position: relative;
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,14 +126,37 @@ header .nav_btn #menuToggle {
           justify-content: center;
 }
 
-.mv .tit_pop img {
-  width: calc(78/375*100vw);
-  margin-right: 1rem;
+.mv .tit_pop .tit_01 {
+  position: absolute;
+  width: calc(97/375*100vw);
+  left: 0;
+  top: calc(-9/375*100vw);
+}
+
+.mv .tit_pop .tit_02 {
+  position: absolute;
+  width: calc(73/375*100vw);
+  height: calc(73/375*100vw);
+  left: calc(108/375*100vw);
+}
+
+.mv .tit_pop .tit_03 {
+  position: absolute;
+  width: calc(73/375*100vw);
+  height: calc(73/375*100vw);
+  left: calc(196/375*100vw);
+}
+
+.mv .tit_pop .tit_04 {
+  position: absolute;
+  right: calc(19/375*100vw);
+  width: calc(73/375*100vw);
+  height: calc(73/375*100vw);
 }
 
 .mv .under_tit {
   width: calc(373/375*100vw);
-  margin-top: calc(70/375*100vw);
+  margin-top: calc(90/375*100vw);
 }
 
 .content {
@@ -242,14 +266,14 @@ header .nav_btn #menuToggle {
   text-indent: -9999%;
 }
 
-.content #aplly_02 p {
+.content #aplly_02 h4 {
   position: relative;
   text-align: center;
   font-weight: bold;
   font-size: 1.4rem;
 }
 
-.content #aplly_02 p::after {
+.content #aplly_02 h4::after {
   bottom: calc(-20 / 375 * 100vw);
   left: calc(-10 / 375 * 100vw);
   width: calc(300 / 375 * 100vw);
@@ -259,6 +283,11 @@ header .nav_btn #menuToggle {
   content: "";
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.content #aplly_02 p {
+  margin-top: 2rem;
+  color: red;
 }
 
 .content #aplly_02 .submit {
@@ -805,13 +834,16 @@ a:visited, a:hover, a:active {
   .mv .tit_pop {
     margin-top: calc(560/1080*100vw);
   }
+  .mv .tit_pop .tit_01 {
+    top: calc(-32/1080*100vw);
+  }
   .mv .tit_pop img {
     width: alc(17.33333vw);
   }
   .mv .under_tit {
     width: calc(800/1080*100vw);
     margin: 0 auto;
-    margin-top: calc(100/1080*100vw);
+    margin-top: calc(270/1080*100vw);
   }
   .content {
     max-width: calc(750/1080*100vw);
@@ -863,11 +895,11 @@ a:visited, a:hover, a:active {
     padding-top: calc(50 / 1080 * 100vw);
     margin-top: calc(80 /1080*100vw);
   }
-  .content #aplly_02 p {
+  .content #aplly_02 h4 {
     font-size: 3rem;
     font-weight: bold;
   }
-  .content #aplly_02 p::after {
+  .content #aplly_02 h4::after {
     left: calc(-10/1080*100vw);
     bottom: calc(-30/1080*100vw);
     width: calc(600/1080*100vw);
@@ -892,7 +924,7 @@ a:visited, a:hover, a:active {
   .content #judge h6 {
     font-size: 4rem;
   }
-  .content #judge .judge_01, .content #judge .judge_02 {
+  .content #judge .judge_01, .content #judge .judge_02, .content #judge .judge_03 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

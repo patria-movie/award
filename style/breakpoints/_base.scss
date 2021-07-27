@@ -116,6 +116,7 @@ header{
   }
 
   .tit_pop{
+    position: relative;
     display: flex;
     display:-webkit-box;
   	display:-ms-flexbox;
@@ -123,15 +124,38 @@ header{
     margin-top: calc(280/375*100vw);
     justify-content: center;
 
-    img{
-      width: calc(78/375*100vw);
-      margin-right: 1rem;
-    }
+  .tit_01{
+    position: absolute;
+    width: calc(97/375*100vw);
+    left: 0;
+    top: calc(-9/375*100vw);
+  }
+
+  .tit_02{
+    position: absolute;
+    width: calc(73/375*100vw);
+    height: calc(73/375*100vw);
+    left: calc(108/375*100vw);
+  }
+
+  .tit_03{
+    position: absolute;
+    width: calc(73/375*100vw);
+    height: calc(73/375*100vw);
+    left: calc(196/375*100vw);
+  }
+
+  .tit_04{
+    position: absolute;
+    right: calc(19/375*100vw);
+    width: calc(73/375*100vw);
+    height: calc(73/375*100vw);
+  }
   }
 
   .under_tit{
     width: calc(373/375*100vw);
-    margin-top: calc(70/375*100vw);
+    margin-top: calc(90/375*100vw);
   }
 }
 
@@ -237,20 +261,25 @@ header{
       @include title;
     }
 
-    p{
+    h4{
       position: relative;
       text-align: center;
       font-weight: bold;
       font-size: 1.4rem;
     }
 
-    p::after{
+    h4::after{
       bottom: calc(-20 / 375 * 100vw);
       left: calc(-10 / 375 * 100vw);
       width: calc(300 / 375 * 100vw);
       height: calc(70 / 375 * 100vw);
       background: url(../img/pencil.png);
       @include absolute;
+    }
+
+    p{
+      margin-top: 2rem;
+      color: rgb(255, 0, 0);
     }
 
     .submit{
