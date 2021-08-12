@@ -344,6 +344,18 @@ header .nav_btn #menuToggle {
   opacity: 1;
 }
 
+.content #aplly_02 .movie-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: calc(1000/1080*100vw);
+  margin: 0 auto;
+}
+
+.content #aplly_02 .movie-wrap iframe {
+  width: 100%;
+  height: calc(500/1080*100vw);
+}
+
 .content #judge h5 {
   font-size: 2rem;
   text-align: center;
