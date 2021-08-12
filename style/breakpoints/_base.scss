@@ -330,6 +330,19 @@ header{
         opacity: 1;
       }
     }
+
+    .movie-wrap{
+      position: relative;
+      padding-bottom: 56.25%;
+      height: calc(1000/1080*100vw);
+      margin: 0 auto;
+
+      iframe{
+        width: 100%;
+        height: calc(500/1080*100vw);
+      }
+    }
+
   }
 
   #judge{
