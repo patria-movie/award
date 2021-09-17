@@ -43,6 +43,7 @@ header{
 
     .under_tit{
         width: calc(1000/1080*100vw);
+        margin-top: calc(220/375*100vw);
     }
 }
 
@@ -50,7 +51,7 @@ header{
     max-width: calc(750/1080*100vw);
     margin-top: 0;
     padding-bottom: calc(80/1080*100vw);
-    top: calc(450/1080*100vw);
+    top: calc(250/1080*100vw);
 
     h3{
         padding-bottom: 0;
@@ -73,6 +74,15 @@ header{
         h3{
             background-size: calc(350 / 1080 * 100vw);
             padding-top: calc(50/1080*100vw);
+        }
+
+        .btn_award{
+            width: 39rem;
+        }
+
+        a{
+            font-size: 3rem;
+            padding: 3rem 9rem;
         }
     }
 
