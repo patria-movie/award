@@ -158,7 +158,7 @@ header .nav_btn #menuToggle {
 .mv .under_tit {
   display: inline-block;
   width: calc(373/375*100vw);
-  margin-top: calc(5/375*100vw);
+  margin-top: calc(280/375*100vw);
 }
 
 .content {
@@ -167,7 +167,7 @@ header .nav_btn #menuToggle {
   background: rgba(255, 255, 255, 0.6);
   margin: auto;
   padding-bottom: calc(60/375*100vw);
-  top: calc(220/375*100vw);
+  top: calc(100/375*100vw);
 }
 
 .content p {
@@ -206,6 +206,26 @@ header .nav_btn #menuToggle {
   padding-bottom: calc(10 / 375 * 100vw);
   padding-top: calc(40 / 375 * 100vw);
   text-indent: -9999%;
+}
+
+.content #about .btn_award {
+  margin: 0 auto;
+  width: 22rem;
+}
+
+.content #about a {
+  position: relative;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #ff7176;
+  padding: 1rem 4rem;
+  border-radius: 70px;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 0 auto;
 }
 
 .content #aplly_01 h3 {
@@ -288,8 +308,8 @@ header .nav_btn #menuToggle {
 }
 
 .content #aplly_02 p {
-  margin-top: 2rem;
   color: red;
+  text-align: center;
 }
 
 .content #aplly_02 .submit {
@@ -331,29 +351,6 @@ header .nav_btn #menuToggle {
   transition: opacity .3s, -webkit-transform ease .3s;
   transition: transform ease .3s, opacity .3s;
   transition: transform ease .3s, opacity .3s, -webkit-transform ease .3s;
-}
-
-.content #aplly_02 .submit a:hover {
-  color: #ff7176;
-  background: transparent;
-}
-
-.content #aplly_02 .submit a:hover::before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
-}
-
-.content #aplly_02 .movie-wrap {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: calc(1000/1080*100vw);
-  margin: 0 auto;
-}
-
-.content #aplly_02 .movie-wrap iframe {
-  width: 100%;
-  height: calc(500/1080*100vw);
 }
 
 .content #judge h5 {
@@ -856,12 +853,13 @@ a:visited, a:hover, a:active {
   }
   .mv .under_tit {
     width: calc(1000/1080*100vw);
+    margin-top: calc(220/375*100vw);
   }
   .content {
     max-width: calc(750/1080*100vw);
     margin-top: 0;
     padding-bottom: calc(80/1080*100vw);
-    top: calc(450/1080*100vw);
+    top: calc(250/1080*100vw);
   }
   .content h3 {
     padding-bottom: 0;
@@ -879,6 +877,13 @@ a:visited, a:hover, a:active {
   .content #about h3 {
     background-size: calc(350 / 1080 * 100vw);
     padding-top: calc(50/1080*100vw);
+  }
+  .content #about .btn_award {
+    width: 39rem;
+  }
+  .content #about a {
+    font-size: 3rem;
+    padding: 3rem 9rem;
   }
   .content #aplly_01 h3 {
     background-size: calc(140/1080*100vw);
