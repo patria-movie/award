@@ -1,0 +1,11 @@
+@import 'award/variables01';
+@import 'award/base01';
+@import 'award/_nav_btn01';
+
+@media (min-width: 749px) {
+    @import 'award/750up01';
+}
+
+@media print {
+    @import 'award/print01';
+}

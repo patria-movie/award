@@ -1,0 +1,98 @@
+header{
+    .menucont{
+        li{
+        font-size: 2.5rem;
+        }
+    }
+}
+
+
+h4{
+    font-size: 2.8rem;
+}
+
+h6{
+    font-size: 1.8rem;
+    margin: initial;
+}
+
+.content{
+    max-width: calc(750/1080*100vw);
+    margin-top: 0;
+    top: calc(100/1080*100vw);
+
+    #hita_2021{
+        h3{
+            font-size: 3.5rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+            margin: 0 1rem 3rem 0;
+        }
+    }
+
+    iframe{
+        height: calc(200/1080*100vw);
+    }
+
+    .movie_flex{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .movie_wrap{
+        width: 50%;
+        margin: 4rem;
+    }
+
+    .text{
+        width: 50%;
+        margin: 4rem 4rem 0 0;
+    }
+
+    .nomi_flex{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: 4rem;
+    }
+
+    .nomi_2021_li, .nomi_2021_list{
+        width: 31%;
+
+        .movie_wrap{
+            width: 100%;
+            margin: initial;
+        }
+
+        iframe{
+            height:calc(150/1080*100vw);
+        }
+
+        .text{
+            width: initial;
+            margin: 4rem auto;
+        }
+    }
+}
+
+
+    footer{
+
+        margin-top:calc(200/1080*100vw);
+        
+        h3::before{
+            left: calc(600/1080*100vw);
+            width: calc(300/1080*100vw);
+            height: calc(370/1080*100vw);
+            top: calc(-250/1080*100vw);
+        }
+        }
