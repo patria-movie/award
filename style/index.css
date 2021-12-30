@@ -210,7 +210,7 @@ header .nav_btn #menuToggle {
 
 .content #about .btn_award {
   margin: 0 auto;
-  width: 22rem;
+  width: 30rem;
 }
 
 .content #about a {
@@ -879,11 +879,11 @@ a:visited, a:hover, a:active {
     padding-top: calc(50/1080*100vw);
   }
   .content #about .btn_award {
-    width: 39rem;
+    width: 41rem;
   }
   .content #about a {
     font-size: 3rem;
-    padding: 3rem 9rem;
+    padding: 2rem 3rem;
   }
   .content #aplly_01 h3 {
     background-size: calc(140/1080*100vw);

@@ -69,6 +69,13 @@ header .nav_btn #menuToggle {
   top: calc(100/375*100vw);
 }
 
+.content h2 {
+  font-size: 2.4rem;
+  padding: 3rem;
+  text-align: center;
+  color: #ff7176;
+}
+
 .content p {
   font-size: 1.3rem;
   line-height: 2;
@@ -391,6 +398,12 @@ a:visited, a:hover, a:active {
     max-width: calc(750/1080*100vw);
     margin-top: 0;
     top: calc(100/1080*100vw);
+  }
+  .content h2 {
+    font-size: 3.5rem;
+  }
+  .content #intro h6, .content #choco h6 {
+    margin: 0 1rem 3rem 1rem;
   }
   .content #hita_2021 h3 {
     font-size: 3.5rem;
