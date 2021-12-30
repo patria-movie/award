@@ -21,6 +21,17 @@ h6{
     margin-top: 0;
     top: calc(100/1080*100vw);
 
+    h2{
+        font-size: 3.5rem;
+
+    }
+
+    #intro, #choco{
+        h6{
+            margin: 0 1rem 3rem 1rem;
+        }
+    }
+
     #hita_2021{
         h3{
             font-size: 3.5rem;
