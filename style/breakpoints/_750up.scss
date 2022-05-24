@@ -5,250 +5,46 @@ header{
         }
     }
 }
+.all_container{
 
 .mv{
-    height: calc(720/1080*100vw);
+    height: calc(600/1080*100vw);
 
     .kaisai{
         h3{
             margin: auto;
             width: calc(350/1080*100vw);
-            top: calc(-100/1080*100vw);
+            top: calc(-141/1080*100vw);
             left: calc(200/1080*100vw);
         }
     }
     .logo{
         width: calc(550/1080*100vw);
-        top: calc(140/1080*100vw);
+        top: calc(90/1080*100vw);
+    }
+
+    h1{
+        margin-top: -7rem;
     }
 
     h1::after{
         width: calc(160 / 1080 * 100vw);
         height: calc(190 / 1080 * 100vw);
         left: calc(450 / 1080 * 100vw);
-        bottom: calc(-80 / 1080 * 100vw);
-    }
-
-    .tit_pop{
-        margin-top: calc(560/1080*100vw);
-
-        .tit_01{
-            top:calc(-32/1080*100vw);
-        }
-
-        img{
-            width: alc(65/375*100vw);
-        }
-    }
-
-    .under_tit{
-        width: calc(1000/1080*100vw);
-        margin-top: calc(220/375*100vw);
+        bottom: calc(-60 / 1080 * 100vw);
     }
 }
 
-.content{
-    max-width: calc(750/1080*100vw);
-    margin-top: 0;
-    padding-bottom: calc(80/1080*100vw);
-    top: calc(250/1080*100vw);
-
-    h3{
-        padding-bottom: 0;
-    }
-
-    h4, h5, h6{
-        font-size: 2.2rem;
-    }
-
-    p, dl{
-        font-size: 1.8rem;
-        margin: 4rem;
-    }
-
-    .btn_sub img{
-        margin-bottom: 4rem;
-    }
-
-    #about{
-        h3{
-            background-size: calc(350 / 1080 * 100vw);
-            padding-top: calc(50/1080*100vw);
-        }
-
-        .btn_award{
-            width: 41rem;
-        }
+    .under{
+        margin: -3rem auto;
+        width: 56.6rem;
 
         a{
-            font-size: 3rem;
-            padding: 2rem 3rem;
-        }
-    }
-
-    #aplly_01{
-        h3{
-            background-size: calc(140/1080*100vw);
-            margin-top: calc(100/1080*100vw);
-            padding-top: calc(20/1080*100vw);
-        }
-
-        h3::before{
-            bottom: calc(50/1080*100vw);
-            left: calc(190/1080*100vw);
-            width: calc(120/1080*100vw);
-            height: calc(60/1080*100vw);
-        }
-
-        h3::after{
-            bottom: calc(-100 / 1080 * 100vw);
-            left: calc(570 / 1080 * 100vw);
-            width: calc(100 / 1080 * 100vw);
-            height: calc(270 / 1080 * 100vw);
-        }
-    }
-
-    #aplly_015{
-        h3{
-            background-size: calc(140/1080*100vw);
-            margin-top: calc(100/1080*100vw);
-            padding-top: calc(20/1080*100vw);
-        }
-    }
-
-    #aplly_02{
-        h3{
-            background-size: calc(140 / 1080 * 100vw);
-            padding-top: calc(50 / 1080 * 100vw);
-            margin-top: calc(80 /1080*100vw);
-        }
-
-        h4{
             font-size: 3rem;
             font-weight: bold;
-        }
-
-        h4::after{
-            left: calc(-10/1080*100vw);
-            bottom: calc(-30/1080*100vw);
-            width: calc(600/1080*100vw);
-            height: calc(130/1080*100vw);
-        }
-
-        .submit{
-            margin-top: calc(80/1080*100vw);
-            width: 50rem;
-
-        a{
-            font-size: 3.5rem;
-            padding: 2rem 16rem;
-            letter-spacing: 0.2em;
-        }
-
+            background: #ff7176;
+            padding: 4rem 6rem;
         }
     }
 
-
-    #judge{
-        h3{
-            background-size: calc(115/1080*100vw);
-            margin-top: calc(100/1080*100vw);
-        }
-
-        h5{
-            font-size: 4rem;
-        }
-
-        h6{
-            font-size: 4rem;
-        }
-
-        .judge_01, .judge_02, .judge_03{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 4rem;
-        }
-
-        .img_shin{
-            width: 25%;
-            margin: 0 auto;
-        }
-
-        .text{
-            margin-top: -2rem;
-            width: 65%;
-        }
-    }
-
-    #award{
-        h3{
-            background-size: calc(155/1080*100vw);
-            padding-top: calc(0/1080*100vw);
-            margin-top: calc(140/1080*100vw);
-        }
-        
-
-        h3::before{
-            bottom: calc(-13/1080*100vw);
-            left: calc(250/1080*100vw);
-            width: calc(70/1080*100vw);
-            height: calc(120/1080*100vw);
-        }
-
-        h3::after{
-            bottom: calc(-120/1080*100vw);
-            left: calc(530 / 1080 * 100vw);
-            width: calc(300/1080*100vw);
-            height: calc(320/1080*100vw);
-        }
-    }
-
-    #movie{
-        h3{
-            background-size: calc(450/1080*100vw);
-        }
-
-        h3::before{
-            left: calc(75/1080*100vw);
-            width: calc(60/1080*100vw);
-            height: calc(100/1080*100vw);
-            top: calc(-40/1080*100vw);
-        }
-
-        h3::after{
-            left: calc(610/1080*100vw);
-            width: calc(60/1080*100vw);
-            height: calc(100/1080*100vw);
-            top: calc(-40/1080*100vw);
-        }
-
-        .btn_hp{
-            width: 45rem;
-
-            a{
-                font-size: 3.5rem;
-                padding: 2rem 4rem;
-                letter-spacing: 0.1em;
-            }
-        }
-    }
-
-    #contact{
-        h3{
-            background-size: calc(200/1080*100vw);
-            margin-top: calc(100/1080*100vw);
-        }
-    }
-    }
-
-    footer{
-
-        margin-top:calc(500/1080*100vw);
-        
-        h3::before{
-            left: calc(600/1080*100vw);
-            width: calc(300/1080*100vw);
-            height: calc(370/1080*100vw);
-            top: calc(-250/1080*100vw);
-        }
-        }
+}
